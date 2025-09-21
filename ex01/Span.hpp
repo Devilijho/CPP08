@@ -17,9 +17,17 @@ class Span
 		Span &operator=(const Span &other);
 
 		void addNumber(long n);
-		void fillSpan(long value);
 		unsigned int longestSpan();
 		unsigned int shortestSpan();
+
+		template<typename Iterator>
+		void fillSpan(Iterator begin, Iterator end)
+{
+			size_t distance = std::distance(begin, end);
+			if (distance > max_size)
+				throw (std::exception());
+			list.insert(list.begin(), begin, end);
+}
 
 	private:
 		unsigned int max_size;

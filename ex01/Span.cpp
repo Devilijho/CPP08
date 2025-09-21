@@ -46,19 +46,5 @@ unsigned int Span::shortestSpan()
 	listTemp.sort();
 	listTemp.pop_front();
 	int s_min = listTemp.front();
-	if (s_min - min == 0)
-		return (0);
-	else
-		return (s_min - min - 1);
-}
-
-void Span::fillSpan(long value)
-{
-	if (max_size == 0)
-		throw (std::exception());
-	list.clear();
-	for (unsigned int i = 0; i < max_size; ++i)
-	{
-		list.push_back(value);
-	}
+	return (s_min - min);
 }
