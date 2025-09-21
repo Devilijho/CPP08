@@ -1,4 +1,4 @@
-sources = main.cpp Span.cpp
+sources = main.cpp
 
 objects = $(sources:.cpp=.o)
 
@@ -6,7 +6,7 @@ cc = c++
 
 cflags = -Wall -Wextra -Werror -std=c++98
 
-NAME = span
+NAME = mutant
 
 $(NAME): $(objects)
 	$(cc) $(cflags) -o $(NAME) $(objects)
