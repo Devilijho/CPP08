@@ -6,7 +6,7 @@ cc = c++
 
 cflags = -Wall -Wextra -Werror -std=c++98
 
-NAME = bureau
+NAME = easyfind
 
 $(NAME): $(objects)
 	$(cc) $(cflags) -o $(NAME) $(objects)
