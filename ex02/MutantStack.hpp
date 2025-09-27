@@ -1,9 +1,8 @@
 #pragma once
 
-#include <array>
 #include <iterator>
+#include <stack>
 #include <list>
-#include <vector>
 #include <iostream>
 #include <algorithm>
 #include <exception>

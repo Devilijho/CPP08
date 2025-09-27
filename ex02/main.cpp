@@ -1,6 +1,4 @@
 #include "MutantStack.hpp"
-#include <iterator>
-#include <array>
 
 int main()
 {
@@ -51,18 +49,6 @@ int main()
 		}
 		std::cout << "\n\n\n\n";
 	{
-		std::cout << "ITERATOR TEST ON ARRAY" << std::endl;
-		std::array<int, 6> array;
-		array.fill(10);
-		std::array<int, 6>::iterator it = array.begin();
-		std::array<int, 6>::iterator ite = array.end();
-		++it;
-		--it;
-		while (it != ite)
-		{
-			std::cout << "Iterating trough array: " << *it << std::endl;
-			++it;
-		}
 	}
 	return 0;
 }
