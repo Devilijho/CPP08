@@ -5,6 +5,8 @@
 int	main(void)
 {
 	{
+		std::cout << "_____TEST STANDARD_____" << std::endl;
+
 		Span sp = Span(5);
 		sp.addNumber(6);
 		sp.addNumber(3);
@@ -15,7 +17,7 @@ int	main(void)
 		std::cout << "Longest span: " << sp.longestSpan() << std::endl;
 	}
 	{
-		std::cout << "Test expection handling" << std::endl;
+		std::cout << "_____TEST EMPTY SPAN CLASS_____" << std::endl;
 		Span sp(0);
 		try{
 			sp.addNumber(6);
@@ -26,7 +28,7 @@ int	main(void)
 		}
 	}
 	{
-		std::cout << "Test fill from a list: " << std::endl;
+		std::cout << "_____TEST FILL FROM CONTAINER \"LIST\"_____" << std::endl;
 		std::list<int> source;
 		source.push_back(10);
 		source.push_back(20);
@@ -40,7 +42,7 @@ int	main(void)
 
 	}
 	{
-		std::cout << "Test filling from a vector: " << std::endl;
+		std::cout << "_________TEST FILLING FROM \"VECTOR\"_________" << std::endl;
 		std::vector<int> source;
 		source.push_back(10);
 		source.push_back(20);

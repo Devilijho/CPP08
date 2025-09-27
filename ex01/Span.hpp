@@ -1,6 +1,5 @@
 #pragma once
 
-#include <array>
 #include <list>
 #include <vector>
 #include <iostream>
