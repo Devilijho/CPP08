@@ -3,6 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <list>
 #include <exception>
 
 template<typename T>
