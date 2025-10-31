@@ -6,10 +6,17 @@
 #include <algorithm>
 #include <exception>
 
+#include <algorithm>
+#include <cstddef>
+#include <exception>
+#include <iterator>
+#include <vector>
+
 
 class Span
 {
 	public:
+		Span();
 		Span(unsigned int n);
 		~Span();
 		Span(const Span &other);
@@ -19,18 +26,11 @@ class Span
 		unsigned int longestSpan();
 		unsigned int shortestSpan();
 
-		template<typename Iterator>
-		void fillSpan(Iterator begin, Iterator end)
-{
-			size_t distance = std::distance(begin, end);
-			if (distance > max_size)
-				throw (std::exception());
-			list.insert(list.begin(), begin, end);
-}
+		void fillSpan(std::vector<int>::iterator begin, std::vector<int>::iterator end);
 
 	private:
 		unsigned int max_size;
-		std::list<int> list;
+		std::vector<int> list;
 
 
 };
